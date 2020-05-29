@@ -1,6 +1,6 @@
-//Author:TruthHun
-//Email:TruthHun@QQ.COM
-//Date:2018-01-21
+//Author:xiaonian0430
+//Email:xiaonian0430@163.com
+//Date:2020-05-29
 package converter
 
 import (
@@ -16,9 +16,9 @@ import (
 
 	"errors"
 
-	"github.com/TruthHun/gotil/cryptil"
-	"github.com/TruthHun/gotil/filetil"
-	"github.com/TruthHun/gotil/ziptil"
+	"github.com/xiaonian0430/gotil/cryptil"
+	"github.com/xiaonian0430/gotil/filetil"
+	"github.com/xiaonian0430/gotil/ziptil"
 )
 
 type Converter struct {

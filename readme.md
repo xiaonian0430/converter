@@ -43,7 +43,7 @@ ebook-convert --version
 ```
 <a name="effect"></a>
 ## 文档导出效果
-案例使用的是无闻的《Gogs中文文档》，文档地址：https://www.bookstack.cn/books/gogs_zh ，可以访问该地址查看文档导出的实际效果。
+案例使用的是无闻的《Gogs中文文档》，文档地址：https://sh.showcm.top/books/gogs_zh ，可以访问该地址查看文档导出的实际效果。
 
 截图：
 ![文档导出效果](effect.png)
@@ -68,7 +68,7 @@ ebook-convert --version
 <a name="example"></a>
 ## 使用案例
 - 掘金量化 https://www.myquant.cn (这是我们公司的官网，做量化投资的。戳进去，"帮助中心"里面可以看到文档导出效果)
-- 书栈网(BookStack) https://www.bookstack.cn (基于MinDoc做的二次开发的站点，开源地址：https://github.com/TruthHun/BookStack)
+- 书栈网(ShareKnow) https://sh.showcm.top (基于MinDoc做的二次开发的站点，开源地址：https://github.com/xiaonian0430/ShareKnow)
 - MinDoc  https://github.com/lifei6671/mindoc
 
 <a name="config"></a>
@@ -84,13 +84,13 @@ ebook-convert --version
 	"cover": "",
 	"date": "2018-01-21",
 	"description": "Gogs 的目标是打造一个最简单、最快速和最轻松的方式搭建自助 Git 服务。使用 Go 语言开发使得 Gogs 能够通过独立的二进制分发，并且支持 Go 语言支持的 所有平台，包括 Linux、Mac OS X、Windows 以及 ARM 平台。",
-	"footer": "<p style='color:#8E8E8E;font-size:12px;'>本文档使用 <a href='http://www.bookstack.cn' style='text-decoration:none;color:#1abc9c;font-weight:bold;'>书栈(BookStack.CN)</a> 构建 <span style='float:right'>- _PAGENUM_ -</span></p>",
+	"footer": "<p style='color:#8E8E8E;font-size:12px;'>本文档使用 <a href='http://sh.showcm.top' style='text-decoration:none;color:#1abc9c;font-weight:bold;'>书栈(ShareKnow.CN)</a> 构建 <span style='float:right'>- _PAGENUM_ -</span></p>",
 	"header": "<p style='color:#8E8E8E;font-size:12px;'>_SECTION_</p>",
 	"identifier": "",
 	"language": "zh-CN",
-	"creator": "书栈(BookStack.CN)",
-	"publisher": "书栈(BookStack.CN)",
-	"contributor": "书栈(BookStack.CN)",
+	"creator": "书栈(ShareKnow.CN)",
+	"publisher": "书栈(ShareKnow.CN)",
+	"contributor": "书栈(ShareKnow.CN)",
 	"title": "Gogs中文文档",
 	"format": ["epub", "mobi", "pdf"],
 	"font_size": "14",
@@ -229,7 +229,7 @@ ebook-convert --version
 - `footer`、`header` 生成PDF文档时，文档的底部(footer)和顶部(header)内容，仅对PDF文档有效。选填。
 - `identifier` 出版物的标识。留空即可。
 - `language`    语言。必填。可选值：zh、en、zh-CN、en-US等。
-- `creator`、`publisher`、`contributor`   如果你懒的话，三个都传同一个值，比如示例中的"书栈(BookStack.CN)"。如果真要区分的话，`creator`就是文档作者，比如"进击的皇虫"，`publisher`、`contributor`理解为出版单位和构建人。三个配置项，建议填写。
+- `creator`、`publisher`、`contributor`   如果你懒的话，三个都传同一个值，比如示例中的"书栈(ShareKnow.CN)"。如果真要区分的话，`creator`就是文档作者，比如"进击的皇虫"，`publisher`、`contributor`理解为出版单位和构建人。三个配置项，建议填写。
 - `format`  导出的文档格式，不传值则默认导出PDF。可选值：epub、pdf、mobi。
 - `font_size` 数字，默认字体大小，仅对导出PDF有效。选填。
 - `paper_size` 导出文档的页面大小，不区分大小写。默认"A4"，选填。可选值： `a0`, `a1`, `a2`, `a3`, `a4`, `a5`, `a6`, `b0`, `b1`, `b2`, `b3`, `b4`,`b5`, `b6`, `legal`, `letter`
@@ -250,7 +250,7 @@ converter.exe path/to/config.json
 <a name="tutorial-go"></a>
 ### Go语言使用
 引入当前包：
-`github.com/TruthHun/converter/converter`
+`github.com/xiaonian0430/converter/converter`
 ```golang
 if Convert, err:= converter.NewConverter("path/to/config.json");err==nil{
     Convert.Convert()
@@ -284,7 +284,7 @@ ebook-convert content.epub output/book.pdf [options]
 附自己业余时间搞的一些站点，支持我，可以点击访问一下：
 - HC-CMS  http://www.hc-cms.com
 - IT文库  http://wenku.it
-- 书栈(BookStack) http://www.bookstack.cn
+- 书栈(ShareKnow) http://sh.showcm.top
 
 <a name="markdown"></a>
 ## markdown文档如何转成pdf、epub、mobi
