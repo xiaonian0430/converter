@@ -8,7 +8,7 @@ import (
 
 	"fmt"
 
-	"converter/converter"
+	"github.com/xiaonian0430/converter/converter"
 )
 
 func main() {
